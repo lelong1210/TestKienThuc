@@ -1,0 +1,73 @@
+.row a{
+    text-decoration: none;
+  }
+a:hover {
+      color: red;
+  }.Tong{
+   /* background-image: url(https://anhdepblo.com/wp-content/uploads/2018/12/hinh-anh-giang-sinh-dep-1.jpg);*/
+}
+.nut{
+    text-decoration: none;
+    background-color: rgb(235, 223, 223);
+    color: black;
+    padding: 20px 30px;
+}
+/*.nut:hover{
+    background-color: rgb(68, 211, 11);
+    color: rgb(238, 255, 0);
+}.xoay{
+    transform: rotate(0deg);
+}.xoay:hover{
+    transition: all 1s linear;
+    transform: rotate(360deg);    
+}.zoom{
+    transform: scale(1,1);
+}.zoom:hover{
+    transition: all .5s linear;
+    transform: scale(1,.1);
+} */.kc{
+    margin-top: 8%;
+}.row a{
+    text-decoration: none;
+  }
+.footer{
+      background-color: black;
+      color: #ffffff;
+  }
+.footer a{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+  }
+.footer ul{
+      list-style-type: none;
+  }
+  a:hover {
+      color: red;
+  }
+.col-sm-3{
+      margin-top: 3%;
+      margin-bottom: 3%;
+  }
+.logoGCN{
+      width: 100px;
+  }
+.imgG {
+          width: 35%;
+          transform: rotate(0deg);
+          transition: transform 1s;
+      }
+.imgG:hover {
+          width: 80%;
+          transform: rotateY(360deg);
+  }
+.logo{
+      width: 30%;
+  }
+.imgg{
+    width: 70%;
+  }
+.imgtable{
+    width: 70%;
+  }.imgtest{
+    width: 300px;
+}
