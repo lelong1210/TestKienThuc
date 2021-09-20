@@ -21,13 +21,13 @@ class app{
                      if( method_exists($this->controller,$arr[1]) ){
                          $this->action = $arr[1];
                      }
-                    //  else{
-                    //      for($i = 0 ; $i < count($this->overloading);$i++){
-                    //         if($arr[1] == $this->overloading[$i]){
-                    //             $this->action = $arr[1];
-                    //         }
-                    //      }
-                    //  }
+                     else{
+                         for($i = 0 ; $i < count($this->overloading);$i++){
+                            if($arr[1] == $this->overloading[$i]){
+                                $this->action = $arr[1];
+                            }
+                         }
+                     }
                  }
                  unset($arr[1]);
                  if( isset($arr[2]) ){
