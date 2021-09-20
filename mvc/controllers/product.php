@@ -1,17 +1,19 @@
 <?php
-class product extends controller{
+class product extends controller
+{
     function __construct(){
-        
     }
     function show(){
-         echo "mac dinh";
+        echo "mac dinh";
     }
-    function dt($arr=0){
-        echo "hehe";
-        if($arr != 0){
-            echo $arr;
+    // function dt($arr){
+    //     echo "hehe";
+    // }
+   function __call($nameMethod, $hour){
+        if ($nameMethod == 'dt') { // Tên phương khi gọi
+            if(isset($hour[0])){
+                echo "hello";
+            }
         }
     }
-
 }
-?>
