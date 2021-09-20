@@ -18,4 +18,5 @@ class connectDB{
         return $this->conn;
     }
 }/*9}Lj7N~9#ov?5~*{*/
+    /*khong thich day*/
 ?>
