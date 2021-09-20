@@ -1,10 +1,17 @@
 <?php
 class product extends controller{
-    function dt(){
-        echo "dien thoai 222";
-    }
     function __construct(){
-        // echo "mac dinh";
+        
     }
+    function show(){
+         echo "mac dinh";
+    }
+    function dt($arr=0){
+        echo "hehe";
+        if($arr != 0){
+            echo $arr;
+        }
+    }
+
 }
 ?>
