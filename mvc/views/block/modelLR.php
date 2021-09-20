@@ -45,7 +45,7 @@
                             </div>
                         </form>
                         <div class="btndangky text-center">
-                            <button type="button" class="btn" onclick="CheckRong()">Đăng Ký</button>
+                            <button type="button" class="btn">Đăng Ký</button>
                         </div>
                     </div>
                 </div>
@@ -83,15 +83,15 @@
                             <div class="form-group">
                                 <label class="col-sm-4 control-label">Đăng Nhập Bằng</label>
                                 <div class="col-sm-7">
-                                    <BUtton onclick="DangNhapBang()" style="margin-left: 3%;border-radius: 30%;"><i class="fab fa-facebook-f" style="font-size: 30px;"></i></BUtton>
-                                    <BUtton onclick="DangNhapBang()" style="margin-left: 3%;border-radius: 30%;"><i class="fab fa-google" style="font-size: 30px;"></i></BUtton>
-                                    <BUtton onclick="DangNhapBang()" style="margin-left: 3%;border-radius: 30%;"><i class="fab fa-apple" style="font-size: 30px;"></i></BUtton>
+                                    <BUtton style="margin-left: 3%;border-radius: 30%;"><i class="fab fa-facebook-f" style="font-size: 30px;"></i></BUtton>
+                                    <BUtton style="margin-left: 3%;border-radius: 30%;"><i class="fab fa-google" style="font-size: 30px;"></i></BUtton>
+                                    <BUtton style="margin-left: 3%;border-radius: 30%;"><i class="fab fa-apple" style="font-size: 30px;"></i></BUtton>
                                 </div>
                             </div>
                         </form>
                         <div class="btndangky text-center">
                             <!-- <button>hello</button> -->
-                            <button type="button" class="btn" onclick="CheckTKMK()">Đăng Nhập</button>
+                            <button type="button" class="btn" >Đăng Nhập</button>
                         </div>
                     </div>
                 </div>
