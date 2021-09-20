@@ -3,6 +3,7 @@ class app{
     protected $controller = "home";
     protected $action = "show" ;
     protected $params = [];
+    protected $overloading = ["dt"];
     function __construct(){
         try{
             if( isset($_GET["url"]) ){
@@ -19,6 +20,12 @@ class app{
                  if( isset($arr[1]) ){
                      if( method_exists($this->controller,$arr[1]) ){
                          $this->action = $arr[1];
+                     }else{
+                         for($i = 0 ; $i < count($this->overloading);$i++){
+                            if($arr[1] == $this->overloading[$i]){
+                                $this->action = $arr[1];
+                            }
+                         }
                      }
                  }
                  unset($arr[1]);
@@ -39,7 +46,7 @@ class app{
         }
     }
     function UrlProgress(){
-        return explode("/",trim($_GET["url"],"/"));
+        return explode("/",trim(htmlspecialchars($_GET["url"]),"/"));
     }
 }
 ?>

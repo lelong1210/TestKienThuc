@@ -6,14 +6,11 @@ class product extends controller
     function show(){
         echo "mac dinh";
     }
-    // function dt($arr){
-    //     echo "hehe";
-    // }
-   function __call($nameMethod, $hour){
-        if ($nameMethod == 'dt') { // Tên phương khi gọi
-            if(isset($hour[0])){
-                echo "hello";
-            }
+    function __call($method,$params){
+        if($method == "dt" && isset($params[0])){
+            echo "co nhieu cai truyen";
+        }else{
+            echo "truyen k tham so";
         }
     }
 }
