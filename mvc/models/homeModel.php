@@ -3,11 +3,12 @@ class homeModel extends connectDB{
     function GetProduct(){
         try{
             $conn = $this->GetConn();
-            $sql = "SELECT * FROM sanpham";
-            $query = $conn->prepare($sql);
-            $query->execute();
-            $result = $query->fetchAll(PDO::FETCH_ASSOC);
-            return json_encode($result);    
+            print_r($conn);
+            // $sql = "SELECT * FROM sanpham";
+            // $query = $conn->prepare($sql);
+            // $query->execute();
+            // $result = $query->fetchAll(PDO::FETCH_ASSOC);
+            // return json_encode($result);    
         }catch(Exception $e){
             $e->getMessage();
         }

@@ -17,6 +17,9 @@ class connectDB{
     function GetConn(){
         return $this->conn;
     }
+    function Tong(){
+        return 1+2+3;
+    }
 }/*9}Lj7N~9#ov?5~*{*/
     /*khong thich day*/
 ?>
