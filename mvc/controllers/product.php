@@ -7,14 +7,13 @@ class product extends controller
         echo "mac dinh";
     }
     function __call($method,$params){
-        if($method == "dt" && isset($params[0])){
-            echo "co nhieu cai truyen ===>".count($params);
-            $model = $this->call_model("productModel");
-            $model->GetProductDetails();
-            // $model = $this->call_model("homeModel");
-            // echo $model->GetProduct();
-        }else{
-            echo "truyen k tham so";
+        if($method == "dt"){
+            if(isset($params[0])){
+                $model = $this->call_model("productModel");
+                echo $model->GetProductDetails();
+            }else{
+                echo "truyen k tham so";
+            }
         }
     }
 }

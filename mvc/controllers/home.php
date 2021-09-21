@@ -7,10 +7,7 @@ class home extends controller{
         $model = $this->call_model("homeModel");
         $result = $model->GetProduct(); 
 
-        // $model = $this->call_model("testConn");
-        // $model->Showtest();
-
-        // $this->call_view("homeView",["productAthome"=>$result,"model"=>$model]);
+        $this->call_view("homeView",["productAthome"=>$result,"model"=>$model]);
     }
 }
 ?>

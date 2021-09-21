@@ -14,6 +14,15 @@ class connectDB{
            // echo "fault => ".$e->getMessage();
         }
     }
+    // function connecDB(){
+    //     try{
+    //         $this->conn = new PDO("mysql:host=$this->servername;dbname=$this->dbname",$this->username,$this->password);
+    //         $this->conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    //        //echo "connect success";   
+    //     }catch(Exception $e){
+    //        // echo "fault => ".$e->getMessage();
+    //     }        
+    // }
     function GetConn(){
         return $this->conn;
     }
