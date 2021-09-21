@@ -25,6 +25,8 @@ class app{
                          for($i = 0 ; $i < count($this->overloading);$i++){
                             if($arr[1] == $this->overloading[$i]){
                                 $this->action = $arr[1];
+                            }else{// nếu không có bất cứ action nào trùng overloading thì dùng chính arr[1] làm params 
+                                $this->params[] =$arr[1];
                             }
                          }
                      }
@@ -34,7 +36,11 @@ class app{
                      $this->params = array_values($arr);
                      call_user_func_array(array($this->controller,$this->action),$this->params);
                  }else{
-                     call_user_func(array($this->controller,$this->action));
+                     if(isset($this->params[0])){
+                        call_user_func_array(array($this->controller,$this->action),$this->params);
+                     }else{
+                        call_user_func_array(array($this->controller,$this->action),["overview"]);
+                     }
                  }
              }else{
                  require_once "./mvc/controllers/".$this->controller.".php";

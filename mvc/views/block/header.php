@@ -2,12 +2,15 @@
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="" href=""><img class="zoom imgg" src="./public/img/LQL.png" alt="" style="width: 60px;"></a>
+        <a class="" href="">
+          <!-- <img class="zoom imgg" src="./public/img/LQL.png" alt="" style="width: 60px;"> -->
+          <img class="zoom imgg" src="https://i.ibb.co/GTBVhDZ/LQL.png" alt="" style="width: 60px;">
+      </a>
       </div>
       <ul class="nav navbar-nav">
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            <p>DANH MUC SẢN PHẨM</p>
+            <p>DANH MUC 111 SẢN PHẨM</p>
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">

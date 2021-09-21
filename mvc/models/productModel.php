@@ -3,9 +3,8 @@ class productModel extends connectDB{
     function GetProduct(){
 
     }
-    function GetProductDetails(){
+    function GetProductDetails($masp){
         try{
-            $masp = "1";
             $masp = (int)($masp);
             $conn = $this->GetConn();
             $sql = "SELECT mathongso,giatien,linkduongdananh,tensp,manhinh,hedieuhanh,cameratruoc,camerasau,ram,bonhotrong,sim,pinsac 
@@ -21,6 +20,9 @@ class productModel extends connectDB{
         }catch(Exception $e){
             echo $e->getMessage();
         }
+    }
+    function ShowProduct(){
+        
     }
 }
 ?>
