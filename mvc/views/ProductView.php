@@ -3,22 +3,32 @@
 
 <head>
     <?php require_once "block/head.php"; ?>
-    <?php require_once "block/csslink.php" ?>
+    <?php require_once "block/csslink.php"; ?>
+    <?php 
+        if(isset($data["titleOverView"])){
+            $title = $data["titleOverView"];
+            echo "<title>$title</title>";
+        }else{
+            $arr = json_decode($data["productOfDetail"]);
+            $arr = array_values((array)$arr[0]);
+            $title = $arr[3];
+            echo "<title>$title</title>";       
+        }
+    ?>
 </head>
 
 <body>
     <div class="Tong">
         <?php require_once "block/header.php"; ?>
         <div class="NoiDung">
-            <div class="slider container" style=" margin-top: 100px;">
-                <div class="sanpham">
-                    <?php require_once "page/ProductOfDetail.php"; ?>
-                </div>
-                <div class="danhgia">
-                    <?php require_once "page/ReViewProduct.php"; ?>
-                </div>
-                <div class="hienthitest">
-                </div>
+            <div class="container" style=" margin-top: 100px;">
+                <?php
+                    if(isset($data["titleOverView"])){
+                        echo "Tong Quat";
+                    }else{
+                        require_once "page/conTenProductDetail.php";
+                    }
+                ?>
             </div>
         </div>
         <div class="footer">

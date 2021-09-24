@@ -3,12 +3,12 @@ class phone extends controller
 {
     function __construct(){
     }
-    function show($model1){
-        if ($model1 == "overview") {
-            echo "tong quat";
+    function show($param){
+        $model = $this->call_model("productModel");
+        if ($param == "overview") {
+            $this->call_view("ProductView",["productOfDetail"=>$model->GetProductDetails($param),"model"=>$model,"titleOverView"=>"OverView"]);
         } else {
-            $model = $this->call_model("productModel");
-            $this->call_view("ProductView",["productOfDetail"=>$model->GetProductDetails($model1),"model"=>$model]);
+            $this->call_view("ProductView",["productOfDetail"=>$model->GetProductDetails($param),"model"=>$model]);
         }
     }
 }

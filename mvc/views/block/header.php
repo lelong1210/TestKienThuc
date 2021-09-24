@@ -14,7 +14,7 @@
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href=""><i class="fas fa-home"></i> Trang Chủ</a></li>
+            <li><a href="http://localhost/TestKienThucPhp"><i class="fas fa-home"></i> Trang Chủ</a></li>
             <li><a href=""><i class="fas fa-mobile"></i> ĐIỆN THOẠI</a></li>
             <li><a href=""><i class="fas fa-tablet-alt"></i> MÁY TÍNH BẢNG</a></li>
             <li><a href=""><i class="fas fa-laptop"></i> MÁY TÍNH</a></li>
