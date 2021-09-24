@@ -9,7 +9,7 @@ class productModel extends connectDB
         try {
             $masp = (int)($masp);
             $conn = $this->GetConn();
-            $sql = "SELECT mathongso,giatien,linkduongdananh,tensp,manhinh,hedieuhanh,cameratruoc,camerasau,ram,bonhotrong,sim,pinsac 
+            $sql = "SELECT mathongso,giatien,linkduongdananh,tensp,manhinh,hedieuhanh,cameratruoc,camerasau,chip,ram,bonhotrong,sim,pinsac 
                     FROM sanpham
                     INNER JOIN thongsosanpham 
                     ON sanpham.masp = thongsosanpham.masp
@@ -23,13 +23,19 @@ class productModel extends connectDB
             echo $e->getMessage();
         }
     }
-    function ShowProduct()
-    {
+    function ShowProduct($arr){
+
+    }
+    function showTableDetail($arr){
+        $arrNameColum = ["Màn hình","Hệ điều hành","Camera trước","Camera sau","Chip","Ram","Bộ nhớ trong","SIM","Pin, sạc"];
         echo "<table class='table table-striped'>";
-            echo "<tr>";
-                echo "<td>Màn hình</td>";
-                echo "<td>OLED,6.1,SUPER RETINA XDR</td>";
-            echo "</tr>";
+            $count = count($arr);
+                for($i = 4 , $j = 0; $i < $count; $i++,$j++){
+                    echo "</tr>";
+                        echo "<td>$arrNameColum[$j]</td>";
+                        echo "<td>$arr[$i]</td>";
+                    echo "<tr>";
+                }
         echo "</table>";
     }
 }
