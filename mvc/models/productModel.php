@@ -1,10 +1,12 @@
 <?php
-class productModel extends connectDB{
-    function GetProduct(){
-
+class productModel extends connectDB
+{
+    function GetProduct()
+    {
     }
-    function GetProductDetails($masp){
-        try{
+    function GetProductDetails($masp)
+    {
+        try {
             $masp = (int)($masp);
             $conn = $this->GetConn();
             $sql = "SELECT mathongso,giatien,linkduongdananh,tensp,manhinh,hedieuhanh,cameratruoc,camerasau,ram,bonhotrong,sim,pinsac 
@@ -13,16 +15,21 @@ class productModel extends connectDB{
                     ON sanpham.masp = thongsosanpham.masp
                     WHERE sanpham.masp=:masp";
             $query = $conn->prepare($sql);
-            $query->bindParam(":masp",$masp);
+            $query->bindParam(":masp", $masp);
             $query->execute();
             $result = $query->fetchAll(PDO::FETCH_ASSOC);
             return json_encode($result);
-        }catch(Exception $e){
+        } catch (Exception $e) {
             echo $e->getMessage();
         }
     }
-    function ShowProduct(){
-        
+    function ShowProduct()
+    {
+        echo "<table class='table table-striped'>";
+            echo "<tr>";
+                echo "<td>Màn hình</td>";
+                echo "<td>OLED,6.1,SUPER RETINA XDR</td>";
+            echo "</tr>";
+        echo "</table>";
     }
 }
-?>

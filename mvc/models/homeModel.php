@@ -71,17 +71,17 @@ class homeModel extends connectDB{
                 $arrChild = array_values((array)$arr[$sosanpham++]);
                 echo "<div class='col-md-2'>";
                     echo "<div class='price text-center'>";
-                        echo "<a href='product/dt/$arrChild[0]'><img class='zoom imgg' src=$arrChild[5]></a>";
-                        echo "<p class='text-center'><a href='product/dt' style='text-decoration: none;'>$arrChild[1]</a></p>";
+                        echo "<a href='phone/$arrChild[0]'><img class='zoom imgg' src=$arrChild[5]></a>";
+                        echo "<p class='text-center'><a href='phone/$arrChild[0]' style='text-decoration: none;'>$arrChild[1]</a></p>";
                         echo "<strong>";
-                            echo "<p class='text-center '><a href='product/dt' class='text-danger' style='text-decoration: none;'  >$arrChild[2]₫</a></p>";
+                            echo "<p class='text-center '><a href='phone/$arrChild[0]' class='text-danger' style='text-decoration: none;'  >$arrChild[2]₫</a></p>";
                         echo "</strong>";
                     echo "</div>";
                 echo "</div>";
             }
             echo "</div>";
                 echo "<div class='xemthem'>";
-                //echo "<a href='product/dt' class='xemthemm text-center' style='font-size: 20px; text-decoration: none;'><p>xem thêm</p></a>";
+                //echo "<a href='phone/$arrChild[0]' class='xemthemm text-center' style='font-size: 20px; text-decoration: none;'><p>xem thêm</p></a>";
                     echo "<div>Xem Them</div>";
                 echo "</div>";
             echo "</div>";

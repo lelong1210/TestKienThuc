@@ -39,6 +39,7 @@
                 <td>2815 mAh, Sạc nhanh</td>
             </tr>
         </table>
+        <?php print_r(json_decode($data["productOfDetail"]));?>
         <button type="button" class="btn btn-danger">XEM THÊM </button>
     </div>
     <div class="col-sm-5 text-center">

@@ -18,7 +18,6 @@
                     <?php require_once "page/ReViewProduct.php"; ?>
                 </div>
                 <div class="hienthitest">
-                    <?php print_r(json_decode($data["productOfDetail"]));?>
                 </div>
             </div>
         </div>
