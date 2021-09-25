@@ -2,7 +2,7 @@
 class homeModel extends connectDB{
     function SelectThuMucSanPham(){
         $conn = $this->GetConn();
-        $sql = "SELECT * FROM thumucsanpham";   
+        $sql = "SELECT * FROM thumucsanpham ORDER BY mathumuc ASC";   
         $result = $this->SelectAll($conn,$sql);    
         return json_encode($result); 
     }
