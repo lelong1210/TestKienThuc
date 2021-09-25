@@ -14,8 +14,7 @@
 <div class="cachang">
     <div class="slider">
         <?php 
-         
-            $data["model"]->ShowOverView();
+            $data["model"]->ShowOverView(json_decode($data["model"]->countHangSX($data["option"])));
         ?>
     </div>
 </div>

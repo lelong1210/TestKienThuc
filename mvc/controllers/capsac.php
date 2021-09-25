@@ -1,12 +1,12 @@
 <?php
-class dienthoai extends controller
+class capsac extends controller
 {
     function __construct(){
     }
     function show($param){
         $model = $this->call_model("productModel");
         if ($param == "overview") {
-            $option = "dienthoai";
+            $option = "capsac";
             $homemodel = $this->call_model("homeModel");
             $this->call_view("ProductView",["option"=>$option,"model"=>$model,"homemodel"=>$homemodel,"titleOverView"=>"OverView"]);
         } else {

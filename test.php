@@ -1,12 +1,7 @@
-<!-- INSERT INTO `sanpham`(`tensp`, `giatien`, `loaisanpham`, `motasanpham`, `linkduongdananh`) VALUES ('Tai nghe Bluetooth True Wireless LG Tone Free HBS-FN4 Trắng','2899000','tainghe','','https://cdn.tgdd.vn/Products/Images/54/238293/bluetooth-tws-lg-tone-free-hbs-fn4-trang-thumb-600x600.jpg');
-INSERT INTO `sanpham`(`tensp`, `giatien`, `loaisanpham`, `motasanpham`, `linkduongdananh`) VALUES ('Tai nghe Bluetooth True Wireless Samsung Galaxy Buds+ R175','869000','tainghe','','https://cdn.tgdd.vn/Products/Images/54/238231/bluetooth-tws-samsung-galaxy-bub-r175-ava-600x600.jpg');
-INSERT INTO `sanpham`(`tensp`, `giatien`, `loaisanpham`, `motasanpham`, `linkduongdananh`) VALUES ('Tai nghe Bluetooth True Wireless Hydrus TS12BC',890000,'tainghe','','https://cdn.tgdd.vn/Products/Images/54/238028/bluetooth-true-wireless-hydrus-ts12bc-ava-1-600x600.jpg');
-INSERT INTO `sanpham`(`tensp`, `giatien`, `loaisanpham`, `motasanpham`, `linkduongdananh`) VALUES ('Tai nghe chụp tai Bluetooth AirPods Max Apple MGYH3/ MGYJ3/ MGYL3','890000','tainghe','','https://cdn.tgdd.vn/Products/Images/54/236331/bluetooth-airpods-max-apple-ava-600x600.jpg');
-INSERT INTO `sanpham`(`tensp`, `giatien`, `loaisanpham`, `motasanpham`, `linkduongdananh`) VALUES ('Tai nghe Bluetooth True Wireless Xiaomi Earbuds Basic 2 BHR4272GL','688000','tainghe','','https://cdn.tgdd.vn/Products/Images/54/236262/bluetooth-tws-xiaomi-earbuds-basic-2-ava-1-600x600.jpg');
-INSERT INTO `sanpham`(`tensp`, `giatien`, `loaisanpham`, `motasanpham`, `linkduongdananh`) VALUES ('Tai nghe Bluetooth Mozard K8','869000','tainghe','','https://cdn.tgdd.vn/Products/Images/54/235955/bluetooth-mozard-k8-ava-600x600.jpg');
-INSERT INTO `sanpham`(`tensp`, `giatien`, `loaisanpham`, `motasanpham`, `linkduongdananh`) VALUES ('Tai nghe chụp tai Gaming Rapoo VH520C Đen','387900','tainghe','','https://cdn.tgdd.vn/Products/Images/54/235590/tai-nghechup-tai-gaming-rapoo-vh520c-den--8-600x600.jpg');
-INSERT INTO `sanpham`(`tensp`, `giatien`, `loaisanpham`, `motasanpham`, `linkduongdananh`) VALUES ('Tai nghe Bluetooth Thể Thao Audio Technica ATH-CLR100BT','699000','tainghe','','https://cdn.tgdd.vn/Products/Images/54/233270/bluetooth-audio-technica-ath-clr100bt-den-avatar-1-1-600x600.jpg');
-
-
-INSERT INTO `sanpham`(`tensp`, `giatien`, `loaisanpham`, `motasanpham`, `linkduongdananh`) VALUES ('Samsung EB-P5300','2799000','tainghe','','https://cdn.tgdd.vn/Products/Images/57/233280/polymer-20000mah-type-c-25w-samsung-eb-p5300-avatar-1-600x600.jpg');
-INSERT INTO `sanpham`(`tensp`, `giatien`, `loaisanpham`, `motasanpham`, `linkduongdananh`) VALUES ('Xmobile PowerSlim PJ JP213','3799000','tainghe','','https://cdn.tgdd.vn/Products/Images/57/228892/sac-du-phong-10000mah-type-c-powerslim-jp213-avatar-1-600x600-1-600x600.jpg'); -->
+<?php
+$c=[];
+$a=array("Name"=>"Peter","Age"=>"41","Country"=>"USA");
+$b=array("hehe"=>"con chim");
+$c = array_values($a);
+print_r($c);
+?>
