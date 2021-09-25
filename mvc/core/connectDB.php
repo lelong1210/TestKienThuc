@@ -29,6 +29,9 @@ class connectDB{
     function Tong(){
         return 1+2+3;
     }
-}/*9}Lj7N~9#ov?5~*{*/
+}/*
+    id17141465_root
+    9}Lj7N~9#ov?5~*{
+*/
     /*khong thich day*/
 ?>
