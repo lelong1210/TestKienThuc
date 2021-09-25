@@ -1,5 +1,5 @@
 <?php
-class phone extends controller
+class dienthoai extends controller
 {
     function __construct(){
     }

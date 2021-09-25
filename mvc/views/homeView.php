@@ -17,7 +17,7 @@
   </div>      
   <div class="NoiDUng"> 
       <?php
-        $data["model"]->ShowProduct(json_decode($data["productAthome"]));
+        $data["model"]->ShowProduct();
       ?>
   </div>
   <div class="footer">

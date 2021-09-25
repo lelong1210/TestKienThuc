@@ -8,9 +8,9 @@
         ?>
     </div>
     <div class="col-sm-5 text-center">
-        <P class="" style="font-size: 30px;">Điện thoại iPhone 12 64GB</P>
+        <P class="" style="font-size: 30px;"><?php echo $arr[3]?></P>
         <img src=<?php echo $arr[2]; ?> alt="" class="imgg">
-        <p class="" style="font-size: 30px;">21.990.000₫</p>
+        <p class="" style="font-size: 30px;"><?php echo $arr[1]."đ"?></p>
         <button type="button" class="btn btn-danger">THÊM VÀO GIỎ HÀNG</button>
     </div>
 </div>
