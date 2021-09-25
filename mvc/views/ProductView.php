@@ -21,15 +21,15 @@
     <div class="Tong">
         <?php require_once "block/header.php"; ?>
         <div class="NoiDung">
-            <div class="container" style=" margin-top: 100px;">
+            <!-- <div class="container" style=" margin-top: 100px;"> -->
                 <?php
                     if(isset($data["titleOverView"])){
-                        echo "Tong Quat";
+                        require_once "page/productOverView.php";
                     }else{
                         require_once "page/conTenProductDetail.php";
                     }
                 ?>
-            </div>
+            <!-- </div> -->
         </div>
         <div class="footer">
             <?php require_once "block/footer.php"; ?>

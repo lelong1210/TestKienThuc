@@ -81,8 +81,7 @@ class homeModel extends connectDB{
             }
             echo "</div>";
                 echo "<div class='xemthem'>";
-                //echo "<a href='phone/$arrChild[0]' class='xemthemm text-center' style='font-size: 20px; text-decoration: none;'><p>xem thêm</p></a>";
-                    echo "<div>Xem Them</div>";
+                    echo "<a href='./phone' class='xemthemm text-center' style='font-size: 20px; text-decoration: none;'><p>xem thêm</p></a>";
                 echo "</div>";
             echo "</div>";
         }
