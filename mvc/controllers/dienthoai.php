@@ -10,6 +10,7 @@ class dienthoai extends controller
             $homemodel = $this->call_model("homeModel");
             $this->call_view("ProductView",["option"=>$option,"model"=>$model,"homemodel"=>$homemodel,"titleOverView"=>"OverView"]);
         } else {
+            print_r($param);
             $this->call_view("ProductView",["productOfDetail"=>$model->GetProductDetails($param),"model"=>$model]);
         }
     }
